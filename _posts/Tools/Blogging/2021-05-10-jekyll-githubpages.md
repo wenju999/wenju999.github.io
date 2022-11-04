@@ -1,6 +1,6 @@
 ---
 title: 搭建个人博客：Jekyll + Github Pages + VSCode
-author: zjpzhao
+author: wenju
 date: 2021-05-10 16:13:00 +0800
 categories: [Tools]
 tags: [Jekyll,Blog,vscode]
@@ -32,7 +32,7 @@ tags: [Jekyll,Blog,vscode]
 
 ```javascript
 <script src="https://utteranc.es/client.js"
-  repo="zjpzhao/zjpzhao.github.io"
+  repo="wenju/wenju.github.io"
   issue-term="title"
   label="Comment"
   theme="preferred-color-scheme"
@@ -41,9 +41,9 @@ tags: [Jekyll,Blog,vscode]
 </script>
 ```
 
->注意repo="zjpzhao/zjpzhao.github.io"不能带最后的slash（形如：~~repo="zjpzhao/zjpzhao.github.io/"~~） 
+>注意repo="wenju/wenju.github.io"不能带最后的slash（形如：~~repo="wenju/wenju.github.io/"~~） 
 
-将上面的代码插入到zjpzhao.github.io\_layouts\post.html，push之后就可以在每一篇博客下方找到评论区了，发布的评论会在github项目的Issues中显示。
+wenju.github.io\_layouts\post.html，push之后就可以在每一篇博客下方找到评论区了，发布的评论会在github项目的Issues中显示。
 > 注意放置的位置和空格缩进，不可以用tab只能用空格缩进
 
 ![插入到post.html中的位置](/assets/img/2021-05-10-jekyll-githubpages/2021-11-02-19-55-52.png)
