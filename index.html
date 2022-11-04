@@ -2,8 +2,6 @@
 layout: home
 # Index page
 ---
+{% assign pinned = site.posts | where: "pin", "true" %}
 
-{% if paginator.total_pages > 0 %}
-  {% include post-paginator.html %}
-{% endif %}
 
