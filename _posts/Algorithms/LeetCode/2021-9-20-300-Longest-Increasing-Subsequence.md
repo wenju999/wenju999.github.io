@@ -1,6 +1,6 @@
 ---
 title: LeetCode-300. 最长上升子序列
-author: zjpzhao
+author: wenju
 date: 2021-09-20 21:00:00 +0800
 categories: [Algorithms,LeetCode]
 math: true

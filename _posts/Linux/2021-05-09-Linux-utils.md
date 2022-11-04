@@ -1,6 +1,6 @@
 ---
 title: Common Linux Commands
-author: zjpzhao
+author: wenju
 date: 2021-05-09 20:19:00 +0800
 categories: [Linux]
 tags: [Ubuntu,Shell,TODO]
