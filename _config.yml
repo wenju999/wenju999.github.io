@@ -19,7 +19,7 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: wenju's Blog                          # the main title
+title: wenju999's Blog                          # the main title
 
 tagline: Le vent se lève, il faut tenter de vivre.   # it will display as the sub-title ，//起风了，我们仍需努力生存。
 
@@ -38,7 +38,7 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: wenju
+  name: wenju999
   email: wj13194478897@gmail.com            # change to your email address
   links:
     # The first element serves as the copyright owner's link
