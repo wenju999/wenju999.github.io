@@ -13,22 +13,26 @@ theme: jekyll-theme-chirpy
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-# 这个网页提供了语言码可供查看 › http://www.lingoes.net/en/translator/langcode.htm
+# 这个网页提供了语言代码可供查看 › http://www.lingoes.net/en/translator/langcode.htm
 # 如果它与文件夹 `_data/locales` 中的其中一个文件同名，则布局语言也将更改，
 # 否则，布局语言将使用默认值 'en'。
 lang: zh-CN
 
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-# 这个网页用于查看时区码 › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
+# 这个网页用于查看您的时区 › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
 timezone:
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # jekyll-seo-tag 设置 › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-title: wenju999's Blog                          
-tagline: Le vent se lève, il faut tenter de vivre.   #起风了，我们仍需努力生存。
-description: >-
-项目开发实战记录。
+# ↓ --------------------------
+
+title: wenju999's Blog                          # the main title
+
+tagline: Le vent se lève, il faut tenter de vivre.   # it will display as the sub-title ，//起风了，我们仍需努力生存。
+
+description: >-                        # used by seo meta and the atom feed
+  项目开发实战记录。
 
 # 填写您的网站的协议和主机名，例如'https：//username.github.io'
 url: 'https://wenju999.github.io'
@@ -36,8 +40,8 @@ url: 'https://wenju999.github.io'
 github:
   username: wenju999             # change to your github username
 
-# twitter:
-  # username: twitter_username            # change to your twitter username
+twitter:
+  username: twitter_username            # change to your twitter username
 
 social:
   # Change to your full name.
@@ -46,7 +50,7 @@ social:
   email: wj13194478897@gmail.com            # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    # - https://twitter.com/username      # change to your twitter homepage
+    - https://twitter.com/username      # change to your twitter homepage
     - https://github.com/username       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
@@ -135,6 +139,7 @@ pwa:
 paginate: 10
 
 # ------------ The following options are not recommended to be modified ------------------
+
 kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options
