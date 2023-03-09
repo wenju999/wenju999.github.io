@@ -1,13 +1,10 @@
 # The Site Configuration
-# 站点配置
 
 # Import the theme
-#导入主题
 theme: jekyll-theme-chirpy
 
 # Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
 # and doesn't have a custom domain.
-#这个注释掉吧，目前如果是空的，网页会出现问题,这里是关于这个问题的帖子 > https://stackoverflow.com/questions/48197580/jekyll-theme-does-not-work-on-github-pages-but-works-locally
 # baseurl: ''
 
 
@@ -26,6 +23,9 @@ timezone:
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # jekyll-seo-tag 设置 › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+timezone:
+
+# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
 title: wenju999's Blog                          # the main title
@@ -79,17 +79,6 @@ google_analytics:
 #
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
-#
-# 首选配色方案设置。
-#
-# 注意：留空会默认跟随系统偏好颜色，
-# 将会有一个切换开关来在深色和浅色之间切换主题
-# 在侧边栏的左下角。
-#
-# 可用选项：
-#
-# light - 使用浅色配色方案
-# dark - 使用深色配色方案
 #
 theme_mode:   # [light|dark]
 
