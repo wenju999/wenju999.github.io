@@ -4,9 +4,8 @@ author: wenju
 date: 2021-05-10 16:13:00 +0800
 categories: [Tools,Blogging]
 tags: [Jekyll,Blog,vscode]
-
 ---
-## Github Page + Jekyll
+## Github Page + Jekylls
 我选用的是Jekyll主题[Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy)，其效果页面和使用手册在[Live Demo](https://chirpy.cotes.info/)，创建该主题的page repo有两种方式：
 1. 使用[Chripy Starter](https://github.com/cotes2020/chirpy-starter)：非常容易进行主题的版本升级，隔离无关的主题文件项目，仓库比较简洁。
 2. 直接在GitHub上Fork该[项目](https://github.com/cotes2020/jekyll-theme-chirpy)：对个性化二次开发友好但是难升级，经过各种折腾后的我个人不推荐使用。 
@@ -26,93 +25,11 @@ tags: [Jekyll,Blog,vscode]
 所以我将上图中被隐藏的文件夹复制到我的本地repo中，就可以通过修改它们对该主题进行二次开发了，例如部署下面介绍的utterances。
 
 ---
-
-## 实现gitpage上的评论模块——使用utterances
-登录[官网](https://utteranc.es/)，按照说明进行配置和选择（千万不要忘记为你的repo安装utterances app）。评论模块的主题这里，我选择可以适应浏览端操作系统亮暗风格的*preferred-color-scheme*，最后生成如下script代码：
-
-```javascript
-<script src="https://utteranc.es/client.js"
-  repo="wenju/wenju.github.io"
-  issue-term="title"
-  label="Comment"
-  theme="preferred-color-scheme"
-  crossorigin="anonymous"
-  async>
-</script>
-```
-
->注意repo="wenju/wenju.github.io"不能带最后的slash（形如：~~repo="wenju/wenju.github.io/"~~） 
-
-wenju.github.io\_layouts\post.html，push之后就可以在每一篇博客下方找到评论区了，发布的评论会在github项目的Issues中显示。
-> 注意放置的位置和空格缩进，不可以用tab只能用空格缩进
-
-![插入到post.html中的位置](/assets/img/2021-05-10-jekyll-githubpages/2021-11-02-19-55-52.png)
-_插入到post.html中的位置_
-![发布的评论在github Issues提醒和显示](/assets/img/2021-05-10-jekyll-githubpages/2021-11-02-20-07-43.png)
-_发布的评论在github Issues提醒和显示_
-
----
-
 ## 本地编译
 在本地根目录执行`$ bundle exec jekyll s`然后在浏览器中查看<http://localhost:4000/>  
 其他命令行用法参照<https://www.jekyll.com.cn/docs/usage/>
 
 ---
-
 ## 网页自动生成目录
 jekyll自动识别二级标题，并生成博客右侧的目录content（注意只能是二级标题！）
-
----
-
-
-
-
-## 粘贴图片工具-VSCode插件*Paste Image*
-<br>
-
-![]({{ site.url }}/assets/img/2021-05-10-jekyll-githubpages/2021-05-10-16-24-47.png){: width="80%"}
-_按照配置样例修改settings.json_
-
-<br>
-
-在*settings.json*中加入
-```json
-"pasteImage.showFilePathConfirmInputBox": true,
-"pasteImage.path": "${projectRoot}/assets/img/${currentFileNameWithoutExt}",
-"pasteImage.basePath": "${projectRoot}",
-"pasteImage.forceUnixStyleSeparator": true,
-"pasteImage.prefix": "/"
-```
-（以上代码参照vscode插件Extension: *Paste Image*下载处教程）
-效果如下：
-
-<br>
-
-![保存路径预览](/assets/img/2021-05-10-jekyll-githubpages/2021-05-10-16-24-17.png){: width="80%"}
-_保存路径预览_
-
-<br>
-
-![保存和生成链接代码](/assets/img/2021-05-10-jekyll-githubpages/2021-05-10-16-24-34.png){: width="80%"}
-_保存和生成链接代码_
-
-<br>
-
-注意，直接复制图片**文件**然后粘贴是不行的，会在右下角报错：
-
-![]({{ site.url }}/assets/img/2021-05-10-jekyll-githubpages/2021-05-10-16-26-14.png){: width="50%"}
-_报错不识别_
-
-<br>
-
-ERROR原因是:直接复制文件不会进入剪贴板（推测与文件操作用的不是一套剪贴板）  
-解决方法是:打开这张图片然后复制到剪贴板
-
-![]({{ site.url }}/assets/img/2021-05-10-jekyll-githubpages/2021-05-10-16-27-49.png){: width="50%"}
-_在图片浏览器中复制到剪贴板_
-
-![]({{ site.url }}/assets/img/2021-05-10-jekyll-githubpages/2021-05-10-16-40-12.png){: width="50%"}
-_成功复制到剪贴板_
-
-<br>
 ---
