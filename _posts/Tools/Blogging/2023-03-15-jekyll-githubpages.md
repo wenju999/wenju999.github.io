@@ -1,7 +1,7 @@
 ---
 title: 搭建个人博客：Jekyll + Github Pages + VSCode
 author: wenju
-date: 2021-05-10 16:13:00 +0800
+date: 2023-03-15 16:13:00 +0800
 categories: [Tools,Blogging]
 tags: [Jekyll,Blog,vscode]
 ---

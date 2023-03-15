@@ -2,6 +2,7 @@
 ## 快速部署，测试发布Markdown文章
 
 ### 相应文件夹下创建md文件，并添加如下必填内容
+<font color=red>注意：文件命名格式（yyyy-MM-dd-文件名.md）</font>
 ```
 ---
 title: Markdown 语法教程  //文章显示名
