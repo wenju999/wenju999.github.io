@@ -28,8 +28,3 @@ tags: [Jekyll,Blog,vscode]
 ## 本地编译
 在本地根目录执行`$ bundle exec jekyll s`然后在浏览器中查看<http://localhost:4000/>  
 其他命令行用法参照<https://www.jekyll.com.cn/docs/usage/>
-
----
-## 网页自动生成目录
-jekyll自动识别二级标题，并生成博客右侧的目录content（注意只能是二级标题！）
----
