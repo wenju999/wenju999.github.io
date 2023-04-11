@@ -7,7 +7,7 @@
 ---
 title: Markdown 语法教程  //文章显示名
 date: 2021-11-01 16:48:58 +0800 //文章时间
-categories: [Tools, Markdown] //文章分类，需要预文章所在文件夹相对应
+categories: [Tools, Markdown] //文章分类，需要与文章所在文件夹相对应，注意文件夹不要使用中文
 tags: [markdown] //文章标签
 math: true 
 ---
